@@ -439,10 +439,10 @@ def main():
         host = inputbox.ask(screen, "Host")
         if host == '':
             raise SystemExit
-        if ':' in host:
-            host, display = host.split(':')
-            if host == '':  host = 'localhost'
-            display = int(display)
+    if ':' in host:
+        host, display = host.split(':')
+        if host == '':  host = 'localhost'
+        display = int(display)
 
     # connect to this host and port, and reconnect if we get disconnected
     reactor.connectTCP(
