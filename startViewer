@@ -1,0 +1,4 @@
+#!/bin/bash
+# start up the vncviewer to connect to the local desktop
+
+python ./vncviewer.py --shared -h localhost

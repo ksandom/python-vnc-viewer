@@ -1,0 +1,4 @@
+#!/bin/bash
+# Start X11VNC in a manner suitable for a VR desktop
+
+x11vnc -loop -viewonly -shared --forever -scale 0.5 -scale_cursor 2
